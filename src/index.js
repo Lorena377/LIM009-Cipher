@@ -1,13 +1,32 @@
-/* Acá va tu código */
-const cifrar = document.getElementById("cifrar");
-function CIFRAR(){
- console.log('hola mundo')
+/* CIFRANDO UNA LETRA */
+const letra= "A";
+const desplazamiento= 3;
+const ascii= letra.charCodeAt(0);
+
+const numbercifrado= (ascii-65+desplazamiento)%26+65;
+//console.log(numbercifrado);
+//cifrando numero/
+
+const resultado= String.fromCharCode(numbercifrado);
+console.log(resultado)
+
+/* CIFRANDO UNA PALABRA */
+const frase = "ana"
+const palabra= frase.toUpperCase();
+const offset= 3
+
+let palabraCifrada = ""
+for (let i = 0; i < palabra.length; i++) {
+    const codasccii = palabra.charCodeAt(i);
+    const numerocifrado= (codasccii-65+offset)%26+65;
+    const cifrado= String.fromCharCode(numerocifrado);
+    //palabraCifrada = palabraCifrada + cifrado 
+    palabraCifrada += cifrado
+    
 }
-cifrar.addEventListener('click',CIFRAR);
+console.log(palabraCifrada);
+
+console.log(window.cipher.encode(palabra,offset));
 
 /*const decifrar = document.getElementById("decifrar");
-
-function decifrar (){ 
-  
-}
-decifrar.addEventListener('click', decifrar);*/
+*/
