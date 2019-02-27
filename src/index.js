@@ -48,8 +48,8 @@ const cifrar = document.getElementById("cifrar");
 const decifrar = document.getElementById("decifrar");
 const segundaPantalla = document.getElementById("segunda-pantalla");
 const terceraPantalla = document.getElementById("tercera-pantalla");
-const botonFin = document.getElementById("finalizar");
-
+const botonFinCifrado = document.getElementById("finalizar-cifrado");
+const botonFinDecifrado = document.getElementById("finalizar-decifrado")
 cifrar.addEventListener("click", () => {
     primeraPantalla.classList.add('hide');
     segundaPantalla.classList.remove('hide')
@@ -60,5 +60,13 @@ decifrar.addEventListener("click", () => {
     terceraPantalla.classList.remove("hide")
 })
 
+botonFinCifrado.addEventListener("click",() => {
+    primeraPantalla.classList.remove("hide")
+    segundaPantalla.classList.add("hide")
+})
 
-
+botonFinDecifrado.addEventListener("click",() => {
+    primeraPantalla.classList.remove("hide")
+    segundaPantalla.classList.add("hide")
+    terceraPantalla.classList.add("hide")
+})
