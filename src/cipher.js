@@ -10,7 +10,8 @@ window.cipher = {
         palabraCifrada += cifrado
         
     }
-    return(palabraCifrada);
+    console.log(palabraCifrada)
+    return palabraCifrada;
   },
   decode: () => {
     /* Acá va tu código */

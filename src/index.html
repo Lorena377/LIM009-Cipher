@@ -6,33 +6,30 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    
       <div id="primera-pantalla" >
-        <h1>bienvenide</h1>
-        <p id="parrafo"></p>
-        <button type="button" id="cifrar" > CIFRAR</button>
+        <h1>Bienvenide al servicio de mensajerian interna</h1>
+         <button type="button" id="cifrar" > CIFRAR</button>
         <button type="button" id="decifrar" > DECIFRAR</button>
-          </div>
+      </div>
         
-         <div id= "segunda-pantalla">
-          <input type="text" id="texticifrar">
-          <input type="text" id="textioffset">
-          <button type="button" id="respuestacifrada" > Respuesta</button>
+      <div id="segunda-pantalla" class="hide">
+          <input type="text" id="texto-a-cifrar">
+          <input type="text" id="offset-cifrar">
+          <p id="resultado"></p>
+          <button type="button" id="boton-cifrar" > Respuesta</button>
+          <button type="button" id="finalizar-cifrado" > FIN</button>
+      </div>
+        
+       <div id="tercera-pantalla" class="hide">
+          <input type="text" id="texto-a-decifrar">
+          <input type="text" id="offset-decifrar">
+          <button type="button" id="boton-decifrar" > Respuesta</button>
+          <button type="button" id="finalizar-decifrado" > FIN</button>
         </div>
         
-        <div id="tercera-pantalla">
-          <input type="text" id="textidecifrar">
-          <input type="text" id="textioffsetdedecifrar">
-          <button type="button" id="respuestadecifrada" > Respuesta</button>
-          </div>
-          
-      <div>
-        <button type="button" id="finalizar" > FIN</button>
-        
-      </div>
-        
-      </div>
-    </div>
+      
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
