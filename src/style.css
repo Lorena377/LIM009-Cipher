@@ -1,10 +1,33 @@
 body {
-    background: rgb(223, 167, 190);
+    background-image: url(img/imagen\ fondo\ 3.jpg);
+    background-size: 100% auto;
     text-align: center;
-    color: blue;
-    font-family: verdana;
+    color:pink;
+    font-family: Georgia;
 }
 
 .hide {
     display: none;
+}
+
+#cifrar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+#decifrar{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
 }
