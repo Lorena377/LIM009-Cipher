@@ -13,9 +13,9 @@ console.log(resultado)
 
 /* CIFRANDO UNA PALABRA */
 
-const textoACifrar = document.getElementById("texto-a-cifrar");
+//const textoACifrar = document.getElementById("texto-a-cifrar");
 const botonCifrar = document.getElementById("boton-cifrar");
-const offsetCifrar = document.getElementById("offset-cifrar");
+//const offsetCifrar = document.getElementById("offset-cifrar");
 const resultadoCifrado = document.getElementById("resultado");
 
 botonCifrar.addEventListener("click", () => {
@@ -63,9 +63,9 @@ const ascci = letraDeCifrada.charCodeAt(i);
 const numberDecifrado = (ascii - 90 - desplazamientoDecifrado) % 26 + 90;
 /* DECIFANDO UNA PALABRA */
 
-const textoADecifrar = document.getElementById("texto-a-decifrar");
+//const textoADecifrar = document.getElementById("texto-a-decifrar");
 const botonDecifrar = document.getElementById("boton-decifrar");
-const offsetDecifrar = document.getElementById("offset-decifrar");
+//const offsetDecifrar = document.getElementById("offset-decifrar");
 const resultadoDecifrado = document.getElementById("resultado2");
 
 botonDecifrar.addEventListener("click", () => {
