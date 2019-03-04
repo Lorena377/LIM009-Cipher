@@ -1,26 +1,27 @@
 window.cipher = {
-  encode: (string,offset) => {
+  encode: (textoACifrar,offsetCifrar) => {
     /* Acá va tu código */
-    let palabraCifrada = ""
-    for (let i = 0; i < string.length; i++) {
-      const codasccii = string.charCodeAt(i);
-      const numerocifrado = (codasccii - 65 + parseInt(offset)) % 26 + 65;
-      const cifrado = String.fromCharCode(numerocifrado);
-      //palabraCifrada = palabraCifrada + cifrado 
-      palabraCifrada += cifrado
-    }
+    let palabraCifrada = "";
+for (let i = 0; i < textoACifrar.length; i++) {
+    const codasccii = textoACifrar.toUpperCase().charCodeAt(i);
+    const numerocifrado = (codasccii - 65 + parseInt(offsetCifrar)) % 26 + 65;
+    const cifrado = String.fromCharCode(numerocifrado);
+    //palabraCifrada = palabraCifrada + cifrado 
+    palabraCifrada += cifrado;
+}
     return palabraCifrada;
-  },
-  decode: (string1,offset1) => {
+},
+
+  decode: (textoADecifrar,offsetDecifrar) => {
     /* Acá va tu código */
     let textoDecifrado = '';
-    for (let i = 0; i<string1.length; i++) {
-        const codasccii = string1.charCodeAt(i);
-        const numerocifrado = (codasccii - 90 - parent(offset1)) % 26 + 90;
+    for (let i = 0; i < textoADecifrar.length; i++) {
+        const codasccii = textoADecifrar.toUpperCase().charCodeAt(i);
+        const numerocifrado = (codasccii - 90 - parseInt(offsetDecifrar)) % 26 + 90;
         const decifrado = String.fromCharCode(numerocifrado);
         //palabraDeCifrada = palabraDeCifrada + cifrado 
         textoDecifrado += decifrado;
-    }
+ }
     return textoDecifrado;
-  }
-}
+    }
+      }
