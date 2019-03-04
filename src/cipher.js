@@ -14,14 +14,13 @@ window.cipher = {
   decode: (string1,offset1) => {
     /* Acá va tu código */
     let textoDecifrado = '';
-    for (let i = 0; i<palabraDeCifrada.length; i++) {
-        const codasccii = palabraDeCifrada.charCodeAt(i);
-        const numerocifrado = (codasccii - 90 - parent(offset)) % 26 + 90;
+    for (let i = 0; i<string1.length; i++) {
+        const codasccii = string1.charCodeAt(i);
+        const numerocifrado = (codasccii - 90 - parent(offset1)) % 26 + 90;
         const decifrado = String.fromCharCode(numerocifrado);
         //palabraDeCifrada = palabraDeCifrada + cifrado 
         textoDecifrado += decifrado;
     }
-    console.log(textoDecifrado);
     return textoDecifrado;
   }
 }

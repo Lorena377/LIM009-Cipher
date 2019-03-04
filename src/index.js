@@ -12,7 +12,7 @@ const resultado = String.fromCharCode(numbercifrado);
 console.log(resultado)
 
 /* CIFRANDO UNA PALABRA */
-/*const frase = "ana"
+const frase = "ana"
 const palabra = frase.toUpperCase();
 const offset = 3
 
@@ -25,9 +25,6 @@ for (let i = 0; i < palabra.length; i++) {
     palabraCifrada += cifrado
 
 }
-console.log(palabraCifrada);
-
-console.log(window.cipher.encode(palabra, offset));*/
 
 //MOSTRANDO Y OCULTANDO PANTALLAS//
 
@@ -80,7 +77,7 @@ const numberDecifrado = (ascii - 90 - desplazamientoDecifrado) % 26 + 90;
 
 
 /* DECIFANDO UNA PALABRA */
-/*const fraseDecifrada = "ana"
+const fraseDecifrada = "ana"
 const palabraDeCifrada = fraseDecifrada.toUpperCase();
 const offsetDecifrado = 3
 
@@ -92,6 +89,6 @@ for (let i = 0; i < palabraDeCifrada.length; i++) {
     //palabraDeCifrada = palabraDeCifrada + cifrado 
     textoDecifrado += decifrado;
 }
-console.log(textoDecifrado);
+//console.log(textoDecifrado);
 
-console.log(window.cipher.encode(palabraDeCifrada, offset));*/
+//console.log(window.cipher.encode(palabraDeCifrada, offset));
