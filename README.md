@@ -1,5 +1,9 @@
 # Cifrado César
 
+Trabajas en un ambiente laboral donde, por seguridad no puedes mencionar cierta información pues podria ser de alto riesgo. Se ha creado una aplicación que te permitirá enviar esos mensajes encriptados y que el destinatario del mensaje pueda tener una interfaz para desencriptarlo. De esta manera podras enviar tus mensajes de forma segura.
+
+## Introducción
+
 Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
@@ -15,27 +19,15 @@ Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
 
 En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
 
-## Resumen del proyecto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
-
-Algunas ideas de ejemplo:
-
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
-
-
-## Consideraciones generales
+### Consideraciones generales
 
 - Este proyecto se debe resolver de manera individual.
 - El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
 - Tiempo para completarlo: El proyecto dura 2 semanas, trabaja con sprints y planificando tus tareas.
 
-## Objetivos de aprendizaje
+####
+ Objetivos de aprendizaje
 
 En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
 
@@ -60,8 +52,17 @@ Usa este alfabeto simple (solamente mayúsculas y sin ñ):
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
 
 - Quiénes son los principales usuarios de producto.
+Trabajadores de oficina, que desean mandar un mensaje oculto.
+
 - Cuáles son los objetivos de estos usuarios en relación con tu producto.
+Mandar un mensaje encriptado, que solo un destinatario especifico pueda decifrar.
+
+![Podra elegir si desea cifrar o decifrar](imagenes.readme/imagen readme 1.png)
+![Sin titulo](imagenes.readme/imagen readme 2.png)
+
 - Cómo crees que el producto que estás creando está resolviendo sus problemas.
+Con la implementación de este proyecto los usurios pueden mandar sus mensajes discreta y segura.
+
 
 #### Interfaz de usuario (UI)
 
@@ -92,14 +93,6 @@ La interfaz debe permitir al usuario:
   o `cipher.decode()` según sea necesario y actualizar el resultado en la UI.
 * `test/cipher.spec.js`: este archivo contiene algunos tests de ejemplo y acá
   tendrás que implementar los tests para `cipher.encode()` y `cipher.decode()`.
-
-## Parte opcional o “Hacker edition”
-
-Las secciones llamadas “Hacker Edition” son opcionales. Si **terminaste** con todo lo anterior y te queda tiempo, intenta completarlas. Así podrás profundizar y/o ejercitar más sobre los objetivos de aprendizaje del proyecto.
-
-La descripción general de este proyecto no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El boilerplate incluye algunos tests (comentados en principio) que puedes usar como punto de partida para implementar el soporte para estos casos.
-
-Tampoco se menciona qué pasaría si el offset fuera negativo. Como parte del hacker edition te invitamos a explorar también esta caso por tu cuenta.
 
 ## Vamos a los detalles. Consideraciones Técnicas
 
@@ -287,8 +280,3 @@ Esta sección está  para ayudarte a llevar un control de lo que vas completando
 * [ ] Interfaz permite escribir un texto para ser descifrado.
 * [ ] Interfaz muestra el resultado del descifrado correctamente.
 
-### Parte Opcional: "Hacker edition"
-
-* [ ] Cifra/descifra minúsculas
-* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
