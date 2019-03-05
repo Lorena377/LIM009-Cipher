@@ -51,16 +51,16 @@ Usa este alfabeto simple (solamente mayúsculas y sin ñ):
 
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
 
-- Quiénes son los principales usuarios de producto.
+### Quiénes son los principales usuarios de producto.
 Trabajadores de oficina, que desean mandar un mensaje oculto.
 
-- Cuáles son los objetivos de estos usuarios en relación con tu producto.
+### Cuáles son los objetivos de estos usuarios en relación con tu producto.
 Mandar un mensaje encriptado, que solo un destinatario especifico pueda decifrar.
 
-![Podra elegir si desea cifrar o decifrar](imagenes.readme/imagen readme 1.png)
-![Sin titulo](imagenes.readme/imagen readme 2.png)
+![Podra elegir si desea cifrar o decifrar](imagenes.readme/imagenreadme1.png)
+![Sin titulo](imagenes.readme/imagenreadme2.png)
 
-- Cómo crees que el producto que estás creando está resolviendo sus problemas.
+### Cómo crees que el producto que estás creando está resolviendo sus problemas.
 Con la implementación de este proyecto los usurios pueden mandar sus mensajes discreta y segura.
 
 
