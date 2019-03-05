@@ -57,8 +57,8 @@ Trabajadores de oficina, que desean mandar un mensaje oculto.
 ### Cuáles son los objetivos de estos usuarios en relación con tu producto.
 Mandar un mensaje encriptado, que solo un destinatario especifico pueda decifrar.
 
-![Podra elegir si desea cifrar o decifrar](imagenes.readme/imagenreadme1.png)
-![Sin titulo](imagenes.readme/imagenreadme2.png)
+![Podra elegir si desea cifrar o decifrar](imagenesreadme/imagenreadme1.png)
+![Sin titulo](imagenesreadme/imagenreadme2.png)
 
 ### Cómo crees que el producto que estás creando está resolviendo sus problemas.
 Con la implementación de este proyecto los usurios pueden mandar sus mensajes discreta y segura.
